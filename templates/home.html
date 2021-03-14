@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <h2>Seja Bem vindo</h2>
+    {% if user.is_autenticated %}
+        { user.username }
+    {% endif %}
+
+{% endblock %}
