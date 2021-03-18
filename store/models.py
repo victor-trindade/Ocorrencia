@@ -6,6 +6,7 @@ from django.db import models
 class Store(models.Model):
     sf_id = models.CharField(max_length=18, blank=True, null=True)
     name = models.CharField(max_length=255)
+    name2 = models.CharField(max_length=255)
     addr = models.CharField(max_length=255)
     cnpj = models.CharField(max_length=14)
 
